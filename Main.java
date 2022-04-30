@@ -27,9 +27,9 @@ public class Main {
             }
         }
         else{
-            try (PrintWriter out = new PrintWriter("IPstate.txt")) {
+            try (PrintWriter wrt = new PrintWriter("IPstate.txt")) {
                 System.out.println("Не найден верный IP адрес");
-                out.println("Не найден верный IP адрес");
+                wrt.println("Не найден верный IP адрес");
             }
             catch (IOException ex){
                 System.out.println(ex.getMessage());
